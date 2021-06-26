@@ -1,0 +1,939 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.health.pusun.device.train.GroupTrainFragment">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="15dp"
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:textSize="25sp"
+                    android:gravity="bottom"
+                    android:text="左右组合"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/dianwei4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="bottom"
+                    android:text="【点位调整】"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/lob_ball"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/corner_button_blue_pressed"
+                android:text="挑球" />
+            <TextView
+                android:id="@+id/catch_ball"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="扑球" />
+            <TextView
+                android:id="@+id/rub_ball"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="搓球" />
+            <TextView
+                android:id="@+id/push_ball"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="推球" />
+
+            <TextView
+                android:id="@+id/hook_ball"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="勾球" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/group_ball_9"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="抽球" />
+            <TextView
+                android:id="@+id/group_ball_6"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="半场突击" />
+
+            <TextView
+                android:id="@+id/group_ball_7"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="杀球" />
+            <TextView
+                android:id="@+id/diao_group"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="高远球" />
+
+            <TextView
+                android:id="@+id/put_net"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="放网" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/group_ball_4"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="左场接发" />
+            <TextView
+                android:id="@+id/group_ball_5"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:visibility="visible"
+                android:clickable="false"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="右场接发" />
+            <TextView
+                android:id="@+id/gap10"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:background="@drawable/code_button_bg_default"
+                android:text="搓球" />
+            <TextView
+                android:id="@+id/gap8"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="推球" />
+
+            <TextView
+                android:id="@+id/gap9"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginRight="30dp"
+                android:visibility="invisible"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="勾球" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:textSize="25sp"
+                android:gravity="bottom"
+                android:text="前后组合"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/dianwei5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:gravity="bottom"
+                android:text="【点位调整】"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/group_ball_diaozhi"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="吊上网直线" />
+            <TextView
+                android:id="@+id/group_ball_diaoduizuo"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="吊上网左斜线" />
+
+            <TextView
+                android:id="@+id/group_ball_diaoduiyou"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="吊上网右斜线" />
+            <TextView
+                android:id="@+id/gap16"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:background="@drawable/code_button_bg_default"
+                android:text="线" />
+
+            <TextView
+                android:id="@+id/gap19"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="线" />
+
+            <TextView
+                android:id="@+id/gap4"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:visibility="gone"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="杀上网" />
+            <TextView
+                android:id="@+id/group_ball_3"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:visibility="gone"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="球" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/group_ball_2"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="杀上网直线" />
+            <TextView
+                android:id="@+id/group_ball_shaduizuo"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:visibility="visible"
+                android:clickable="false"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="杀上网左斜线" />
+            <TextView
+                android:id="@+id/group_ball_shaduiyou"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:background="@drawable/code_button_bg_default"
+                android:text="杀上网右斜线" />
+            <TextView
+                android:id="@+id/gap21"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="推球" />
+
+            <TextView
+                android:id="@+id/gap22"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginRight="30dp"
+                android:visibility="invisible"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="勾球" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <!--<TextView-->
+                <!--android:id="@+id/group_ball_4"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="51dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="25sp"-->
+                <!--android:textColor="@color/mode_blue"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:background="@drawable/code_button_bg_default"-->
+                <!--android:text="左场接发" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/group_ball_5"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="51dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="25sp"-->
+                <!--android:textColor="@color/mode_blue"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:background="@drawable/code_button_bg_default"-->
+                <!--android:text="右场接发" />-->
+            <TextView
+                android:id="@+id/gap15"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:visibility="invisible"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="步" />
+            <TextView
+                android:id="@+id/gap_7"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:visibility="invisible"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="杀球" />
+            <TextView
+                android:id="@+id/group_ballno_10"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:visibility="invisible"
+                android:clickable="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="随机四方球" />
+            <TextView
+            android:id="@+id/gap11"
+            android:layout_width="0dp"
+            android:layout_height="51dp"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textColor="@color/mode_blue"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+                android:visibility="invisible"
+            android:gravity="center"
+            android:background="@drawable/code_button_bg_default"
+            android:text="左场接发" />
+            <TextView
+                android:id="@+id/gap12"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:visibility="invisible"
+                android:clickable="false"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="右场接发" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/gap17"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:visibility="gone"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="网" />
+
+            <TextView
+                android:id="@+id/gap1"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="接发球" />
+
+            <TextView
+                android:id="@+id/gap2"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="接发球" />
+
+            <TextView
+                android:id="@+id/gap3"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="接发球" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <!--<TextView-->
+            <!--android:id="@+id/receive_ball"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="51dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="25sp"-->
+            <!--android:textColor="@color/mode_blue"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/code_button_bg_default"-->
+            <!--android:text="接发球" />-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:gravity="bottom"
+                    android:textSize="25sp"
+                    android:text="全场组合"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:id="@+id/dianwei6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:gravity="bottom"
+                    android:text="【点位调整】"/>
+
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/group_ball_zidingyi"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="自定义模式" />
+
+            <TextView
+                android:id="@+id/group_ball_1"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="米字步" />
+
+            <TextView
+                android:id="@+id/group_ball_106"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:visibility="invisible"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="随机四方球" />
+            <TextView
+                android:id="@+id/gap5"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="gap" />
+            <TextView
+                android:id="@+id/group_ball_8"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:textSize="25sp"
+                android:textColor="@color/mode_blue"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/code_button_bg_default"
+                android:text="接发球" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="bottom"
+                android:textSize="25sp"
+                android:visibility="gone"
+                android:text="随机组合"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="30dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/suiji_ball_1"
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="前场随机" />
+
+                    <TextView
+                        android:id="@+id/suiji_ball_2"
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="中前场随机" />
+
+                    <TextView
+                        android:id="@+id/suiji_ball_3"
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="@color/mode_blue"
+                        android:visibility="visible"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="中场随机" />
+                    <TextView
+                        android:id="@+id/suiji_ball_40"
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="invisible"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="中后场随机" />
+                    <TextView
+                        android:id="@+id/suiji_ball_41"
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:textSize="25sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="后场随机" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/group_ball_10"
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="随机四方球" />
+                    <TextView
+                        android:id="@+id/suiji_ball_4"
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:visibility="visible"
+                        android:clickable="false"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="中后场随机" />
+                    <TextView
+                        android:id="@+id/suiji_ball_5"
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:visibility="visible"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="后场随机" />
+                    <TextView
+                        android:id="@+id/gap86"
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="invisible"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="推球" />
+
+                    <TextView
+                        android:id="@+id/gap96"
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginRight="30dp"
+                        android:visibility="invisible"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="勾球" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

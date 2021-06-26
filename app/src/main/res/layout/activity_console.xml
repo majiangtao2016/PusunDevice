@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_blue_select"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/code_button_bg_default"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="返回"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="发球位置微调"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textSize="17sp"
+                    android:gravity="bottom"
+                    android:text="单项落点(左右组合落点)"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/point1"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="正手搓/勾/放网" />
+                    <TextView
+                        android:id="@+id/point3"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="正手挑/扑/推球" />
+                    <TextView
+                        android:id="@+id/point5"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="正手抽球" />
+                    <TextView
+                        android:id="@+id/point7"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="正手过渡/突击" />
+                    <TextView
+                        android:id="@+id/point9"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="正手杀/吊/高远球" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/point2"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="反手搓/勾/放网" />
+                    <TextView
+                        android:id="@+id/point4"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="反手挑/扑/推球" />
+                    <TextView
+                        android:id="@+id/point6"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="反手抽球" />
+                    <TextView
+                        android:id="@+id/point8"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="反手过渡/突击" />
+                    <TextView
+                        android:id="@+id/point10"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="反手杀/吊/高远球" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="bottom"
+                    android:text="全场落点      (备注:前场,中场,后场5点的速度会同步调整)"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/point23"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="1号落点" />
+                    <TextView
+                        android:id="@+id/point18"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="2号落点" />
+                    <TextView
+                        android:id="@+id/point22"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="3号落点" />
+                    <TextView
+                        android:id="@+id/point17"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="4号落点" />
+                    <TextView
+                        android:id="@+id/point21"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="5号落点" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/point26"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="6号落点" />
+                    <TextView
+                        android:id="@+id/point11"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="7号落点" />
+                    <TextView
+                        android:id="@+id/point25"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="8号落点" />
+                    <TextView
+                        android:id="@+id/point12"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="9号落点" />
+                    <TextView
+                        android:id="@+id/point24"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="10号落点" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/point29"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="11号落点" />
+                    <TextView
+                        android:id="@+id/point20"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="12号落点" />
+                    <TextView
+                        android:id="@+id/point28"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="13号落点" />
+                    <TextView
+                        android:id="@+id/point19"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="14号落点" />
+                    <TextView
+                        android:id="@+id/point27"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="15号落点" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textSize="17sp"
+                    android:gravity="bottom"
+                    android:text="前后组合落点"
+                    android:visibility="gone"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/point111"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="点7/直线上网前场" />
+
+                    <TextView
+                        android:id="@+id/point13"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:background="@drawable/code_button_bg_default"
+                        android:gravity="center"
+                        android:text="左斜线前场"
+                        android:textColor="@color/mode_blue"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/point15"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="invisible"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="右斜线前场" />
+                    <TextView
+                        android:id="@+id/point7no"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:visibility="invisible"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="中后场正手位" />
+                    <TextView
+                        android:id="@+id/point9no"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:visibility="invisible"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="后场正手位" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/point112"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="点9/直线上网后场" />
+                    <TextView
+                        android:id="@+id/point14"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="左斜线后场" />
+                    <TextView
+                        android:id="@+id/point16"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="右斜线后场" />
+                    <TextView
+                        android:id="@+id/point8no"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:visibility="invisible"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="中后场反手位" />
+                    <TextView
+                        android:id="@+id/point10no"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:visibility="invisible"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="后场反手位" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textSize="17sp"
+                    android:gravity="bottom"
+                    android:visibility="gone"
+                    android:text="四方球落点"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/point117"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="点4/前场正手位" />
+                    <TextView
+                        android:id="@+id/point118"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="点2/前场反手位" />
+                    <TextView
+                        android:id="@+id/point119"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="点14/后场正手位" />
+                    <TextView
+                        android:id="@+id/point120"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="点12/后场反手位" />
+                    <TextView
+                        android:id="@+id/point90no"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:visibility="invisible"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="后场正手位" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textSize="17sp"
+                    android:gravity="bottom"
+                    android:text="接发球落点"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/point30"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="单项左场接发" />
+
+                    <TextView
+                        android:id="@+id/point31"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/code_button_bg_default"
+                        android:gravity="center"
+                        android:text="组合左1号位"
+                        android:textColor="@color/mode_blue"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/point32"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="组合左2号位" />
+                    <TextView
+                        android:id="@+id/point57no"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:visibility="invisible"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="中后场正手位" />
+                    <TextView
+                        android:id="@+id/point59no"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:visibility="invisible"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="后场正手位" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/point33"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="单项右场接发" />
+                    <TextView
+                        android:id="@+id/point34"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="组合右1号位" />
+                    <TextView
+                        android:id="@+id/point35"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="组合右2号位" />
+                    <TextView
+                        android:id="@+id/point68no"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:visibility="invisible"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="中后场反手位" />
+                    <TextView
+                        android:id="@+id/point610no"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:visibility="invisible"
+                        android:textColor="@color/mode_blue"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/code_button_bg_default"
+                        android:text="后场反手位" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/qianlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="开始练球密码设定："
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/code_button_bg_default"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pass_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/corner_button_blue_pressed"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:text="确认修改"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/qianlay_she"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="设置密码设定："
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/password_she"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/code_button_bg_default"
+                        android:inputType="number"
+                        android:imeOptions="flagNoExtractUi"
+                        android:maxLength="6"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pass_btn_she"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/corner_button_blue_pressed"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:text="确认修改"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

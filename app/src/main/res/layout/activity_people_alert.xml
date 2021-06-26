@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/push_categary_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#aa7d7e7e"
+    tools:context=".PeopleAlertActivity">
+
+    <LinearLayout
+        android:layout_width="1000dp"
+        android:layout_height="600dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corner_white_default"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="360dp"
+            android:layout_marginTop="10dp"
+
+            android:scaleType="centerInside"
+            android:src="@drawable/crack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="45sp"
+            android:textColor="#f97a00"
+            android:gravity="center_horizontal"
+            android:text="哎呀，因有人靠近，小尚已停止！"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="45sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:text="请点击关闭按钮后重新开始！"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:scaleType="center"
+        android:src="@drawable/close_dia"/>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+//    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.health.pusun.device"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 11
+        versionName "2.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+//    splits {
+//        abi {
+//            enable true
+//            reset()
+//            include 'x86', 'x86_64', 'armeabi-v7a', 'armeabi'
+//            universalApk false
+//        }
+//    }
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+    packagingOptions {
+//        exclude 'lib/armeabi-v7a/libijkplayer.so'
+//        exclude 'lib/armeabi-v7a/libijkffmpeg.so'
+//        exclude 'lib/armeabi-v7a/libijksdl.so'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+    destinationDir file("$projectDir/libs")
+    baseName "Native_Libs2"
+    extension "jar"
+    from fileTree(dir: "libs", include: "**/*.so")
+    into "lib"
+}
+
+tasks.withType(JavaCompile) {
+    compileTask -> compileTask.dependsOn(nativeLibsToJar)
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/smdt.jar')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:support-v4:27.1.0'
+
+    implementation "com.android.support:support-v13:27.1.0"
+    implementation "com.android.support:cardview-v7:27.1.0"
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/simple_eventbus.jar')
+    implementation files('libs/glide-3.6.1.jar')
+    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.bugtags.library:bugtags-lib:latest.integration'
+    implementation 'com.kyleduo.switchbutton:library:1.4.0'
+    implementation 'com.alibaba:fastjson:1.1.51.android'
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    implementation 'com.jaeger.statusbaruitl:library:1.0.0'
+    implementation 'com.umeng.analytics:analytics:latest.integration'
+    implementation 'me.imid.swipebacklayout.lib:library:1.0.0'
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+    implementation 'io.reactivex:rxjava:1.0.14'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.easing:library:1.0.1@aar'
+    implementation 'com.daimajia.androidanimations:library:1.1.3@aar'
+    /* Fillable Loaders */
+    implementation 'com.github.jorgecastilloprz:fillableloaders:1.02@aar'
+    /*Circular reveal*/
+    implementation 'com.github.ozodrukh:CircularReveal:1.1.1@aar'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'cn.yipianfengye.android:zxing-library:2.1'
+    implementation 'com.zcw:togglebutton-library:1.0.0'
+    implementation 'cn.qqtheme.framework:WheelPicker:1.1.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.zhy:okhttputils:2.3.9'
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'com.just.agentweb:agentweb:2.0.1'
+    implementation 'com.allenliu.versionchecklib:library:2.2.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.yuyh.imgsel:library:2.0.2'
+    //    compile 'com.dou361.ijkplayer:jjdxm-ijkplayer:1.0.6'
+    implementation 'com.sh.shvideo:shvideolibrary:1.5.0'
+    implementation 'top.zibin:Luban:1.1.7'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-java:3.2.6'
+    implementation 'com.github.dueeeke.dkplayer:player-ijk:3.2.6'
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+    implementation 'com.github.maning0303:MNPasswordEditText:V1.0.2'
+//    //    # 必选，可兼容市面上绝大部分设备
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-java:2.5.7'
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-armv7a:2.5.7'
+//    //    # 可选，用于兼容一些其他的CPU架构
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-armv5:2.5.7'
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-arm64:2.5.7'
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-x86:2.5.7'
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-x86_64:2.5.7'
+//    //    implementation 'com.orhanobut:dialogplus:1.11@aar'
+//    //    # 可选，里面包含StandardVideoController的实现
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-ui:2.5.7'
+    implementation 'me.zhouzhuo.zzhorizontalprogressbar:zz-horizontal-progressbar:1.1.0'
+    // 串口
+    implementation 'com.github.licheedev.Android-SerialPort-API:serialport:1.0.1'
+
+
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/push_categary_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#aa7d7e7e"
+    tools:context="com.health.pusun.device.TwoMinAlertActivity">
+
+    <LinearLayout
+        android:layout_width="1000dp"
+        android:layout_height="600dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:background="@drawable/corner_white_default"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/twomin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:textSize="45sp"
+            android:textColor="@color/black"
+            android:text="训练结束了！请将设备归位，并清理场地！"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:scaleType="center"
+        android:src="@drawable/close_dia"/>
+
+</RelativeLayout>

@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icon_blue"
+    android:paddingTop="10dp"
+    tools:context=".teach.ProgramActivity">
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:visibility="gone"
+        android:textColor="@color/mode_blue"
+        android:textSize="21sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="自定义模式"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="460dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"
+        android:text="支持选择2-5个点位进行顺序或随机发球  "/>
+
+    <RelativeLayout
+        android:id="@+id/qiuchang"
+        android:layout_width="380dp"
+        android:layout_height="510dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/qiuchang">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="90dp"
+            android:text="点位选择面板"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num15"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="15"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num14"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="14"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num13"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="168dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="13"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num12"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="232dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num11"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="301dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="11"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num10"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num9"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num8"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="168dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num7"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="232dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num6"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="301dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num5"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="225dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num4"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="225dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num3"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="168dp"
+            android:layout_marginTop="225dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="232dp"
+            android:layout_marginTop="225dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="301dp"
+            android:layout_marginTop="225dp"
+            android:background="@drawable/yuan_white"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:textSize="23sp"
+        android:visibility="gone"
+        android:layout_below="@+id/qiuchang"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:text="(点位采用米字步落点)"/>
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="130dp"
+        android:layout_toRightOf="@+id/qiuchang"
+        android:layout_marginLeft="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:text="所选点位："/>
+        <TextView
+            android:id="@+id/select_dianwei"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:text=""
+            android:textSize="21sp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/dialog_button_default"/>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:background="@drawable/close_dia"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/hintVelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="180dp"
+        android:layout_toRightOf="@+id/qiuchang"
+        android:layout_marginLeft="60dp"
+        android:textSize="17sp"
+        android:textColor="#ED0909"
+        android:text="(点位需变速，发球间隔限制为2.2秒)"/>
+    <TextView
+        android:id="@+id/btn_ball"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:background="@drawable/corner_button_blue_pressed"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/qiuchang"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="300dp"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="开始发球"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/qiuchang"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="225dp"
+        android:textColor="@color/black"
+        android:text="发球次序："/>
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/switchbtn"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/qiuchang"
+        android:textSize="21sp"
+        android:visibility="visible"
+        app:kswBackColor="@drawable/switch_color_selector"
+        app:kswBackMeasureRatio="2.5"
+        app:kswTextOff="顺序"
+        app:kswTextOn="随机"
+        app:kswThumbColor="@color/white"
+        app:kswThumbHeight="45dp"
+        app:kswThumbMargin="5dp"
+        app:kswThumbRadius="45dp"
+        app:kswThumbWidth="45dp"
+        app:kswTintColor="@color/icon_orange">
+
+    </com.kyleduo.switchbutton.SwitchButton>
+
+    <RelativeLayout
+        android:id="@+id/bg_tip_start"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="26dp">
+
+        <TextView
+            android:id="@+id/tip_start"
+            android:layout_width="450dp"
+            android:layout_height="380dp"
+            android:text="启动发球..."
+            android:textColor="@color/white"
+            android:background="@drawable/corner_button_tip_start"
+            android:textSize="45sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tip_on"
+            android:layout_width="450dp"
+            android:layout_height="380dp"
+            android:text="设备发球中..."
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:background="@drawable/corner_button_tip_start"
+            android:textSize="45sp"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/stop_ball"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:background="@drawable/stop"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/icon_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_stop"/>
+
+        <TextView
+            android:id="@+id/start_ball_tv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_play"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:text="停止发球"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/stop_ball_left"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/stop"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/icon_play_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_stop"/>
+
+        <TextView
+            android:id="@+id/start_ball_tv_left"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_play_left"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:text="停止发球"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/back_ball"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:background="@drawable/back_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="150dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/back_video"/>
+
+        <TextView
+            android:id="@+id/back_ball_tv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_back"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:text="返回"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bg_tip_stop"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="26dp">
+
+        <TextView
+            android:id="@+id/tip_stop"
+            android:layout_width="500dp"
+            android:layout_height="400dp"
+            android:text="已暂停"
+            android:textColor="@color/white"
+            android:background="@drawable/corner_button_red_default"
+            android:textSize="120sp"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/next_group"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_next_group"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"/>
+
+    <RelativeLayout
+        android:id="@+id/seize_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5988FC">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/ic_notice_seize"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="设备故障"
+            android:textColor="@color/white"
+            android:layout_marginTop="260dp"
+            android:textSize="90sp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/re_start"
+            android:layout_width="400dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="80dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:background="@drawable/corner_button_orange_pressed"
+            android:textColor="@android:color/white"
+            android:text="处理完毕继续练球"
+            />
+        <TextView
+            android:id="@+id/checkVideo"
+            android:layout_width="400dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="80dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="40sp"
+            android:background="@drawable/corner_button_orange_pressed"
+            android:textColor="@android:color/white"
+            android:text="查看故障处理方法"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rotate_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5988FC">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/ic_notice_seize"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="电源保护启动"
+            android:textColor="@color/white"
+            android:layout_marginTop="260dp"
+            android:textSize="60sp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="请关闭主机电源，30秒后重新启动"
+            android:textColor="@color/white"
+            android:layout_marginTop="350dp"
+            android:textSize="50sp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/re_rotate"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="232dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:visibility="visible"
+            android:textSize="40sp"
+            android:background="@drawable/corner_button_orange_pressed"
+            android:textColor="@android:color/white"
+            android:text="确定"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

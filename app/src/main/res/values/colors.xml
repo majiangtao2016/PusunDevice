@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="bottom_gray">#f7f7f7</color>
+    <color name="bottom_gray_cir">#eeeeee</color>
+    <color name="icon_blue">#38adff</color>
+    <color name="mode_blue">#589ff2</color>
+    <color name="icon_orange">#f6ad3c</color>
+    <color name="search_blue">#20a9e6</color>
+    <color name="icon_gray">#7d7e7e</color>
+    <color name="baseline_gray">#eeeeee</color>
+    <color name="icon_red">#d26b6b</color>
+    <color name="text_black">#1b2c38</color>
+    <color name="icon_green">#1fe940</color>
+    <color name="promo_red">#a71d7c</color>
+    <color name="edit_hint_color">#BBBBBB</color>
+    <color name="app_title_background_color">#38adff</color>
+</resources>

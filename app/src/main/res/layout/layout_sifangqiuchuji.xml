@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:background="@color/bg_color">
+    <LinearLayout
+        android:id="@+id/qian_dan_chu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/pt1_name51"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="前场左位置"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"/>
+                <TextView
+                    android:id="@+id/reverse51"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/pt1_name51"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:text="恢复出厂设定"
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tip_ud51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="上下角度调整："
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/degree2_51"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tip_ud51"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/minus_ud51"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tip_ud51"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/minus_ud51"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/add_ud51"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_toRightOf="@+id/tip_ud51"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignLeft="@+id/add_ud51"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tip_lr51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="左右角度调整："
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/degree1_51"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tip_lr51"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/minus_lr51"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tip_lr51"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/minus_lr51"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/add_lr51"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_toRightOf="@+id/tip_lr51"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignLeft="@+id/add_lr51"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tip_ve51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="发球速度调整："
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/velo51"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tip_ve51"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/minus_ve51"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tip_ve51"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/minus_ve51"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/add_ve51"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_toRightOf="@+id/tip_ve51"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignLeft="@+id/add_ve51"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/send51"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/code_button_bg_default"
+                android:text="确  认"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:id="@+id/pt1_name53"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="后场左位置"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"/>
+                <TextView
+                    android:id="@+id/reverse53"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/pt1_name53"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:text="恢复出厂设定"
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tip_ud53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="上下角度调整："
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/degree2_53"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tip_ud53"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/minus_ud53"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tip_ud53"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/minus_ud53"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/add_ud53"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_toRightOf="@+id/tip_ud53"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignLeft="@+id/add_ud53"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tip_lr53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="左右角度调整："
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/degree1_53"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tip_lr53"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/minus_lr53"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tip_lr53"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/minus_lr53"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/add_lr53"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_toRightOf="@+id/tip_lr53"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignLeft="@+id/add_lr53"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tip_ve53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="发球速度调整："
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/velo53"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tip_ve53"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/minus_ve53"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tip_ve53"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/minus_ve53"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/add_ve53"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_toRightOf="@+id/tip_ve53"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignLeft="@+id/add_ve53"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/send53"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/code_button_bg_default"
+                android:text="确  认"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@color/white">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/pt2_name52"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="前场右位置"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"/>
+                <TextView
+                    android:id="@+id/reverse52"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/pt2_name52"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:text="恢复出厂设定"
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tip_ud52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="上下角度调整："
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/degree2_52"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tip_ud52"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/minus_ud52"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tip_ud52"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/minus_ud52"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/add_ud52"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_toRightOf="@+id/tip_ud52"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignLeft="@+id/add_ud52"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tip_lr52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="左右角度调整："
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/degree1_52"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tip_lr52"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/minus_lr52"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tip_lr52"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/minus_lr52"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/add_lr52"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_toRightOf="@+id/tip_lr52"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignLeft="@+id/add_lr52"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tip_ve52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="发球速度调整："
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/velo52"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tip_ve52"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/minus_ve52"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tip_ve52"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/minus_ve52"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/add_ve52"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_toRightOf="@+id/tip_ve52"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignLeft="@+id/add_ve52"
+                    android:background="@color/black" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/send52"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/code_button_bg_default"
+                android:text="确  认"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:id="@+id/pt2_name54"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:text="后场右位置"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"/>
+                <TextView
+                    android:id="@+id/reverse54"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/pt2_name54"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:text="恢复出厂设定"
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tip_ud54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="上下角度调整："
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/degree2_54"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tip_ud54"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/minus_ud54"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tip_ud54"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/minus_ud54"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/add_ud54"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_toRightOf="@+id/tip_ud54"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignLeft="@+id/add_ud54"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tip_lr54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="左右角度调整："
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/degree1_54"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tip_lr54"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/minus_lr54"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tip_lr2"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/minus_lr54"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/add_lr54"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_toRightOf="@+id/tip_lr54"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignLeft="@+id/add_lr54"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tip_ve54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="发球速度调整："
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/velo54"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tip_ve54"
+                    android:background="@drawable/code_button_bg_default"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/minus_ve54"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tip_ve54"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/minus_ve54"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/add_ve54"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="330dp"
+                    android:layout_toRightOf="@+id/tip_ve54"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_alignLeft="@+id/add_ve54"
+                    android:background="@color/black" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/send54"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/code_button_bg_default"
+                android:text="确  认"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

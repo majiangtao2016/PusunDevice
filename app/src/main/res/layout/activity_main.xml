@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_launcher"
+    tools:context="com.health.pusun.device.MainActivity">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.dueeeke.videoplayer.player.VideoView
+        android:id="@+id/player"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/icon_gray"-->
+        <!--android:layout_marginBottom="100dp"/>-->
+    <RelativeLayout
+        android:id="@+id/start_ball"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/lianqiu_button_blue">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:text="管理员进入"/>
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/start_ball_scan"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:gravity="center"
+    android:background="@drawable/yuan"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="30dp"
+    android:layout_alignParentBottom="true">
+
+    <ImageView
+        android:id="@+id/icon_play"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/icon_play"/>
+    
+    <TextView
+        android:id="@+id/start_ball_tv"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_play"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:text="我要练球"/>
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scan_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_scan_code"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:layout_margin="15dp"
+>
+            <TextView
+                android:id="@+id/title_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="50dp"
+                android:textSize="50sp"
+                android:text="请选择使用时长"/>
+
+            <Button
+                android:id="@+id/time1"
+                android:layout_below="@+id/title_select"
+                android:layout_width="400dp"
+                android:layout_height="80dp"
+                android:background="@drawable/corner_button_dark_default"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:textSize="39sp"
+                android:gravity="center"
+                android:text="半小时（  元）"/>
+            <Button
+                android:id="@+id/time2"
+                android:layout_below="@+id/time1"
+                android:layout_width="400dp"
+                android:layout_height="80dp"
+                android:background="@drawable/corner_button_dark_default"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textSize="39sp"
+                android:gravity="center"
+                android:text="一小时（  元）"/>
+            <Button
+                android:id="@+id/time3"
+                android:layout_below="@+id/time2"
+                android:layout_width="400dp"
+                android:layout_height="80dp"
+                android:background="@drawable/corner_button_dark_default"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textSize="39sp"
+                android:gravity="center"
+                android:text="二小时（  元）"/>
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_below="@+id/time3"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/corner_button_dark_default"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:textSize="39sp"
+                android:gravity="center"
+                android:text="返回"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pay_wechat_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp">
+            <TextView
+                android:id="@+id/title_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:textSize="40sp"
+                android:text="订单支付"/>
+
+            <ImageView
+                android:layout_width="210dp"
+                android:layout_height="60dp"
+                android:src="@drawable/wepaylogo"
+                android:layout_below="@+id/title_pay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"/>
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="86dp"
+                android:src="@drawable/wepaynote"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"/>
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_below="@+id/title_pay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/bg_scan_code_rec">
+
+                <ImageView
+                    android:id="@+id/pay_code"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:padding="20dp"
+                    android:scaleType="centerInside" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_scan_code"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:layout_margin="15dp"
+>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="50dp"
+                android:textSize="50sp"
+                android:text="请输入设备使用密码"/>
+            <LinearLayout
+                android:id="@+id/password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/title"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.maning.pswedittextlibrary.MNPasswordEditText
+                    android:id="@+id/password"
+                    android:layout_width="420dp"
+                    android:layout_height="80dp"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"
+                    app:mnPsw_mode="Circle"
+                    app:mnPsw_style="StyleOneself"
+                    app:mnPsw_border_width="3dp"
+                    app:mnPsw_border_color="@color/icon_blue"
+                    android:maxLength="4"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_password"
+                android:layout_below="@+id/password_layout"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/corner_button_dark_default"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textSize="39sp"
+                android:gravity="center"
+                android:text="进入训练"/>
+
+            <Button
+                android:id="@+id/btn_quit"
+                android:layout_below="@+id/btn_password"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/corner_button_dark_default"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:textSize="39sp"
+                android:gravity="center"
+                android:text="返回"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/select_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp">
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="45sp"
+                android:text="请选择本次训练时长"/>
+
+      <LinearLayout
+          android:id="@+id/select_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="20dp"
+          android:gravity="center"
+          android:layout_below="@+id/title2">
+          <RelativeLayout
+              android:id="@+id/rela_alipay1"
+              android:layout_width="wrap_content"
+              android:gravity="center"
+              android:layout_height="wrap_content">
+              <com.health.pusun.device.views.MyNumberPicker
+                  android:id="@+id/np1"
+                  android:layout_width="200dp"
+                  android:layout_height="200dp">
+              </com.health.pusun.device.views.MyNumberPicker>
+              <TextView
+                  android:id="@+id/device_long"
+                  android:layout_width="wrap_content"
+                  android:layout_height="60dp"
+                  android:textSize="40sp"
+                  android:gravity="center_vertical"
+                  android:layout_toRightOf="@+id/np1"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="10dp"
+                  android:text="小时"
+                  android:textColor="@android:color/black"
+                  />
+          </RelativeLayout>
+          <RelativeLayout
+              android:id="@+id/rela_alipay2"
+              android:layout_width="wrap_content"
+              android:gravity="center_vertical"
+              android:layout_height="wrap_content">
+              <com.health.pusun.device.views.MyNumberPicker
+                  android:id="@+id/np2"
+                  android:layout_width="200dp"
+                  android:layout_height="200dp"></com.health.pusun.device.views.MyNumberPicker>
+              <TextView
+                  android:id="@+id/device_type"
+                  android:layout_width="wrap_content"
+                  android:layout_height="60dp"
+                  android:textSize="40sp"
+                  android:gravity="center_vertical"
+                  android:layout_toRightOf="@+id/np2"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="10dp"
+                  android:text="分钟"
+                  android:textColor="@android:color/black"
+                  />
+
+          </RelativeLayout>
+      </LinearLayout>
+
+            <TextView
+                android:id="@+id/select_time_start"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:layout_below="@+id/select_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="开始训练"
+                android:textColor="@android:color/white"
+                android:background="@drawable/corner_button_dark_default"
+                />
+            <TextView
+                android:id="@+id/select_long_start"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:layout_below="@+id/select_time_start"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="不限时训练"
+                android:textColor="@android:color/white"
+                android:background="@drawable/corner_button_dark_default"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ButtonSetup"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:text="Setup" />
+
+    <Button
+        android:id="@+id/ButtonConsole"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/ButtonSetup"
+        android:background="@color/transparent"
+         />
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/ButtonConsole"
+        android:visibility="gone"
+        android:text="Camera" />
+
+    <Button
+        android:id="@+id/stopcamera"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/camera"
+        android:visibility="gone"
+        android:text="Stop Camera" />
+
+    <Button
+        android:id="@+id/compress"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/stopcamera"
+        android:visibility="gone"
+        android:text="Compress" />
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/push_categary_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#aa7d7e7e"
+    tools:context="com.health.pusun.device.FaultDealActivity">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="950dp"-->
+        <!--android:layout_marginLeft="60dp"-->
+        <!--android:layout_marginRight="60dp"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:background="@drawable/corner_white_default"-->
+        <!--android:orientation="vertical">-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="60dp"-->
+            <!--android:scaleType="center"-->
+            <!--android:src="@drawable/fault"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:textSize="40dp"-->
+            <!--android:textColor="#f97a00"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="哎呀，小尚出故障了！"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:textSize="32dp"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="请打开主机后盖，检查是不是以下故障类型："/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:layout_marginTop="150dp"-->
+            <!--android:textSize="32dp"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="解决后请点击继续练球按钮重新开始！如果故障还无法解决，请联系专业客服：13888888888"/>-->
+
+        <!--<Button-->
+            <!--android:layout_marginTop="70dp"-->
+            <!--android:id="@+id/open"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:background="@drawable/dialog_button_selected"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:text="打开后盖"/>-->
+    <!--</LinearLayout>-->
+
+    <com.dueeeke.videoplayer.player.VideoView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/close"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginBottom="50dp"-->
+        <!--android:layout_marginRight="50dp"-->
+        <!--android:scaleType="center"-->
+        <!--android:background="@drawable/red_yuan"-->
+        <!--android:src="@drawable/close_dia"/>-->
+
+    <ImageView
+        android:id="@+id/close1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:visibility="gone"
+        android:scaleType="center"
+        android:background="@drawable/red_yuan"
+        android:src="@drawable/close_dia"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="卡球自助处理视频"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="请按照视频提示自助处理卡球,处理好后请点击"/>
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="300dp"
+            android:layout_height="85dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:background="@drawable/corner_button_orange_pressed"
+            android:textColor="@android:color/white"
+            android:text="已处理完继续练球"
+            />
+    </RelativeLayout>
+    
+</RelativeLayout>
